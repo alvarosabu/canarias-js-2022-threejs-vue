@@ -2,7 +2,9 @@
 import Draw from './assets/draw.svg'
 </script>
 <template>
-  <Draw class="transform scale-90" />
+  <div class="bg-white">
+    <Draw class="transform scale-90" />
+  </div>
 </template>
 <style>
 @font-face {

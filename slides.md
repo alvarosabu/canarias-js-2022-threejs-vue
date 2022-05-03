@@ -58,8 +58,6 @@ preload: false
 ---
 # ¿Qué es 3D?
 
-<Portal class="w-full" />
-
 ---
 
 # Conceptos básicos de 3D en Web
@@ -67,7 +65,8 @@ preload: false
 <BasicsDraw />
 
 ---
-layout: text-window
+layout: text-image
+media: /vertices.png
 ---
 
 # Conceptos básicos de 3D en Web
@@ -77,8 +76,6 @@ layout: text-window
 - **Polígono**: cualquier forma que se forma al conectar líneas rectas. 
 - **Cara**: la parte más básica de una malla poligonal. Ayuda a llenar el espacio entre los bordes.
 
-::window::
-![](/vertices.png)
 ---
 layout: text-window
 preload: true
@@ -93,7 +90,7 @@ preload: true
 Es por eso que programar WebGL nativo es tan difícil. **Un simple triangulo serian al menos 100 lineas de código**. Imagina añadir luces, sombras etc.
 
 ::window::
-<PorscheWireframe class="w-full h-350px" />
+
 ---
 layout: text-window
 ---
