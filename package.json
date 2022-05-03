@@ -15,6 +15,7 @@
     "@alvarosabu/prettier-config": "^1.1.0",
     "@iconify-json/logos": "^1.1.5",
     "playwright-chromium": "^1.21.1",
+    "sass": "^1.51.0",
     "slidev-theme-penguin": "^1.4.0",
     "three": "^0.140.0",
     "troisjs": "^0.3.4",

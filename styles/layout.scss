@@ -1,0 +1,9 @@
+.slidev-layout {
+  h1 {
+    @apply text-2xl mb-6;
+  }
+
+  .prose li {
+    @apply my-0;
+  }
+}

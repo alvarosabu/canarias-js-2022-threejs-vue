@@ -1,0 +1,12 @@
+.slidev-layout {
+  :not(pre) > code:before,
+  :not(pre) > code:after {
+    content: '';
+    padding: 0 0.2em;
+    opacity: 0.5;
+  }
+
+  :not(pre) > code:before {
+    margin-right: -0.08em;
+  }
+}
