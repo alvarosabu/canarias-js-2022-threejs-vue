@@ -12,37 +12,31 @@ let controls
 let pane
 let scene = new THREE.Scene()
 
-scene.background = new THREE.Color(0x000)
-scene.fog = new THREE.Fog(0x000)
+const bgColor = new THREE.Color('#111')
 
-const ambientLight = new THREE.AmbientLight(0xffffff, 0.8)
-scene.add(ambientLight)
+scene.fog = new THREE.Fog(bgColor, 0.1, 75)
+scene.background = bgColor
 
-const directionalBlueLight = new THREE.DirectionalLight(0x0000ff, 1)
-directionalBlueLight.position.set(-5, 0, 0)
-scene.add(directionalBlueLight)
-
-const directionalRedLight = new THREE.DirectionalLight(0xff0000, 1)
-directionalRedLight.position.set(5, 0, 0)
-scene.add(directionalRedLight)
-
+// Lights
+const ambientLight = new THREE.AmbientLight(0xff00ff, 0.1)
 const rectAreaLight = new THREE.RectAreaLight(0xffffff, 0.4, 4, 4)
+rectAreaLight.position.set(0, -2, 0)
 rectAreaLight.rotation.set(Math.PI / 2, 0, 0)
-scene.add(rectAreaLight)
+
+scene.add(ambientLight, rectAreaLight)
+
+scene.add(camera)
+
+// Lights
 
 // Model
 const gltfLoader = new GLTFLoader()
 
-gltfLoader.load('/models/porsche-911-carrera/scene.gltf', gltf => {
+gltfLoader.load('/models/AkuAku.gltf', gltf => {
   /* gltf.scene.scale.set(0.1, 0.1, 0.1) */
+  console.log(gltf.scene)
+  gltf.scene.position.set(0, -2, 0)
   scene.add(gltf.scene)
-
-  /*  gltf.scene.traverse(child => {
-    if (child.isMesh) {
-      child.material.wireframe = true
-      child.material.color = new THREE.Color(0xffffff)
-    }
-  }) */
 })
 
 function initRenderer() {
@@ -57,13 +51,16 @@ function initRenderer() {
     1000,
   )
 
-  camera.position.set(2, 1, 4)
+  camera.position.set(2, 0, 8)
 
   controls = new OrbitControls(camera, renderer.domElement)
   controls.enableDamping = true
   renderer.setSize(experience.value.clientWidth, experience.value.clientHeight)
   renderer.render(scene, camera)
   renderer.outputEncoding = THREE.sRGBEncoding
+  renderer.toneMappingExposure = 2.3
+  renderer.shadowMap.enabled = true
+  renderer.gammaFactor = 0
 }
 
 function loop() {

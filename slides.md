@@ -603,7 +603,7 @@ Alguno de los formatos mas conocidos son:
 
 
 ::window::
-<PorscheExample class="w-full h-250px"/>
+<AkuAku class="w-full h-250px"/>
 
 ---
 layout: text-window
@@ -632,7 +632,7 @@ renderer.outputEncoding = THREE.sRGBEncoding
 ```
 
 ::window::
-<PorscheExample class="w-full h-250px"/>
+<AkuAku class="w-full h-250px"/>
 
 ---
 layout: text-window
