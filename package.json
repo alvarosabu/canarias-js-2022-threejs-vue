@@ -1,0 +1,25 @@
+{
+  "name": "canarias-js-2022-threejs-vue",
+  "private": true,
+  "scripts": {
+    "build": "slidev build",
+    "dev": "slidev --open",
+    "export": "slidev export"
+  },
+  "dependencies": {
+    "@slidev/cli": "^0.30.3",
+    "@slidev/theme-default": "*",
+    "@slidev/theme-seriph": "*"
+  },
+  "devDependencies": {
+    "@alvarosabu/prettier-config": "^1.1.0",
+    "@iconify-json/logos": "^1.1.5",
+    "playwright-chromium": "^1.21.1",
+    "slidev-theme-penguin": "^1.4.0",
+    "three": "^0.140.0",
+    "troisjs": "^0.3.4",
+    "tweakpane": "^3.0.8",
+    "vite-plugin-glsl": "^0.1.2",
+    "vite-svg-loader": "^3.3.0"
+  }
+}
