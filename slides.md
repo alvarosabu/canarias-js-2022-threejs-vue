@@ -613,7 +613,7 @@ preload: false
 # Fórmato .gltf
 
 
-GLTF significa *GL Transmission Format*. Está hecho por Khronos Group (los chicos detrás de OpenGL, WebGL, Vulkan, Collada y con muchos miembros como AMD/ATI, Nvidia, Apple, id Software, Google, Nintendo, etc.) Se ha vuelto muy popular en los últimos años. Sobretodo como estándar para softwares 3D y game engines.
+GLTF significa *GL Transmission Format*. Está hecho por Khronos Group (los chicos detrás de OpenGL, WebGL, Collada y con miembros de AMD/ATI, Nvidia, Apple, ) Se ha vuelto muy popular en los últimos años. Sobretodo como estándar para softwares 3D y game engines.
 
 ```js
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader'
@@ -621,7 +621,7 @@ import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader'
 const gltfLoader = new GLTFLoader()
 
 gltfLoader.load(
-  '/models/porsche-911-carrera/scene.gltf', 
+  '/models/AkuAku/scene.gltf', 
 gltf => {
   scene.add(gltf.scene)
 })
@@ -644,31 +644,6 @@ Código 🍝 en un solo archivo esta bien al principio para probar cosas rápida
 
 ThreeJS esta compuesto de **Clases** internamente, por lo que es común ver proyectos donde se usan clases para extender las funcionalidades de ThreeJS.
 
-```js
-import * as THREE from 'three'
-import Experience from '../Experience.js'
-
-export default class Floor
-{
-    constructor()
-    {
-        this.experience = new Experience()
-        this.scene = this.experience.scene
-        this.resources = this.experience.resources
-
-        this.setGeometry()
-        this.setTextures()
-        this.setMaterial()
-        this.setMesh()
-    }
-
-    setGeometry()
-    {
-        this.geometry = new THREE.CircleGeometry(5, 64)
-    }
-    ...
-}
-```
 
 ::window::
 ![](/file-structure.png)
