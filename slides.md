@@ -2,6 +2,7 @@
 theme: penguin
 colorSchema: light
 layout: intro
+download: true
 themeConfig:
   logoHeader: 'https://res.cloudinary.com/alvarosaburido/image/upload/v1651503116/as-portfolio/logo_nomvmi.svg'
   eventLogo: '/logo.png'
@@ -34,11 +35,13 @@ layout: text-image
 media: https://www.jasonrayner.com/images/gifs/roomba.gif
 caption: '"Roomba" by Jason Rayner https://www.jasonrayner.com'
 ---
+
 # Motivación
 
-He desarrollado webs y aplicaciones móviles durante mas de 8 años. Siempre tuve facinación por los videojuegos y el diseño 3D, la animación de personajes tridimensionales que dan vida a personajes y escenas.
+He desarrollado webs y aplicaciones móviles durante mas de 8 años. Siempre tuve fascinación por los videojuegos y el diseño 3D, la animación de personajes tridimensionales que dan vida a personajes y escenas.
 
 Siempre pense que el 3D estaba fuera de mi alcance intelectual, pero con el tiempo me he dado cuenta de que es posible aprender y hacer cosas extraordinarias.
+
 
 ---
 layout: text-window
@@ -258,7 +261,7 @@ preload: false
 
 # Orbit Controls
 
-Los controles de "Orbita" permiten que el usuario pueda mover la cámara con el ratón orbitando al rededor de un objetivo.
+Los controles de "Órbita" permiten que el usuario pueda mover la cámara con el ratón orbitando al rededor de un objetivo.
 
 
 ```js
@@ -277,6 +280,8 @@ function loop() {
 
 ::window::
 <TransformObjects class="w-full h-350px" />
+
+
 ---
 layout: text-window
 preload: false
@@ -415,9 +420,10 @@ Geometrias disponibles en **ThreeJS**:
 layout: text-window
 preload: false
 ---
+
 # Materiales
 
-En ThreeJS, los Materiales son usados para definir el color que recibirá cada pixel visible de la superficie.
+En ThreeJS, los **Materiales** son usados para definir el color que recibirá cada pixel visible de la superficie.
 
 Los algoritmos que calculan el color de cada pixel son llamados **shaders**.
 
@@ -435,6 +441,7 @@ scene.add(torus)
 
 ::window::
 <MaterialsExample class="w-full h-250px"/>
+
 
 ---
 layout: text-window
@@ -700,7 +707,6 @@ class: 'grid text-center align-self-center justify-self-center'
 layout: two-cols
 ---
 
-::left::
 # 👍
 Si ThreeJS **solo es una parte de tu app o tu website**, su magia puede ser encapsulada en un componente para ser re-usada.
 
@@ -708,10 +714,13 @@ Si ThreeJS **solo es una parte de tu app o tu website**, su magia puede ser enca
 # 👎
  Si tu idea es hacer una app **solamente de 3D**, sin interfaz de usuario, mi recomendación es hacerlo en VanillaJS o Typescript, tendrá mejor `performance` y no tendras que depender de los ciclos de montaje.
 
+
 ---
-class: 'grid text-center align-self-center justify-self-center'
+class: grid text-center align-self-center justify-self-center
 ---
-# ¿Hay alguna manera mas sencilal de usar ThreeJS en Vue? 🤔
+
+# ¿Hay alguna manera mas sencilla de usar ThreeJS en Vue? 🤔
+
 
 ---
 layout: text-window
@@ -776,4 +785,3 @@ layout: default
 class: 'grid text-center align-self-center justify-self-center'
 ---
 # Gracias totales 🙏
-
