@@ -2,7 +2,6 @@
 theme: penguin
 colorSchema: light
 layout: intro
-download: true
 themeConfig:
   logoHeader: 'https://res.cloudinary.com/alvarosaburido/image/upload/v1651503116/as-portfolio/logo_nomvmi.svg'
   eventLogo: '/logo.png'
