@@ -56,21 +56,16 @@ Me gustaría que esta charla fuera un pequeño empujón para que todos los que e
 <GalaxyGenerator class="w-full h-350px" />
 
 ---
-preload: false
+layout: default
 ---
-# ¿Qué es 3D?
-
----
-
 # Conceptos básicos de 3D en Web
 
 <BasicsDraw />
 
 ---
 layout: text-image
-media: /vertices.png
+media: '/vertices.png'
 ---
-
 # Conceptos básicos de 3D en Web
 
 - **Vértice**: un solo punto. 
@@ -80,7 +75,7 @@ media: /vertices.png
 
 ---
 layout: text-window
-preload: true
+preload: false
 ---
 
 # WebGL
@@ -92,7 +87,7 @@ preload: true
 Es por eso que programar WebGL nativo es tan difícil. **Un simple triangulo serian al menos 100 lineas de código**. Imagina añadir luces, sombras etc.
 
 ::window::
-
+<AkuAkuWireframe class="w-full h-350px" />
 ---
 layout: text-window
 ---
@@ -453,7 +448,8 @@ Algunos materiales disponibles en **ThreeJS**:
 - MeshLambertMaterial
 - MeshPhongMaterial
 - MeshToonMaterial
-  
+
+¿En que se differencian? Click [aquí](https://r105.threejsfundamentals.org/threejs/lessons/threejs-materials.html)  
 
 ::window::
 <Materials class="w-full h-250px"/>
