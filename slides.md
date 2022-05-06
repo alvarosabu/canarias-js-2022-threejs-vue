@@ -719,6 +719,7 @@ class: grid text-center align-self-center justify-self-center
 
 ---
 layout: text-window
+preload: false
 ---
 
 # TroisJS
