@@ -39,7 +39,7 @@ import {
         receive-shadow
         cast-shadow
       >
-        <StandardMaterial :color="'red'" />
+        <StandardMaterial :color="'teal'" />
       </Box>
       <Plane
         :width="30"

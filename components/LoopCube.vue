@@ -11,7 +11,7 @@ let camera
 const scene = new THREE.Scene()
 
 const geometry = new THREE.BoxGeometry(1, 1, 1)
-const material = new THREE.MeshBasicMaterial({ color: 0xd5001c })
+const material = new THREE.MeshBasicMaterial({ color: 0x00bf7e })
 const cube = new THREE.Mesh(geometry, material)
 cube.rotation.set(2, 2, 0)
 

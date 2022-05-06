@@ -44,7 +44,7 @@ scene.add(spotLight)
 
 const sphere = new THREE.Mesh(
   new THREE.SphereGeometry(2, 32, 32),
-  new THREE.MeshStandardMaterial({ color: 0xd5001c }),
+  new THREE.MeshStandardMaterial({ color: 0x00bf7e }),
 )
 sphere.castShadow = true
 sphere.receiveShadow = true

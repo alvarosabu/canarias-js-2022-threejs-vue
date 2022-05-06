@@ -24,7 +24,7 @@ scene.add(directionalLight, helper)
 
 let geometry = new THREE.TorusKnotGeometry(1, 0.5, 100, 16)
 let material = new THREE.MeshToonMaterial({
-  color: 0xd5001c,
+  color: 0x00bf7e,
 })
 let mesh = new THREE.Mesh(geometry, material)
 mesh.position.set(0, 3, 0)

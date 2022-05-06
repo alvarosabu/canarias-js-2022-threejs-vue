@@ -24,7 +24,7 @@ scene.add(directionalLight)
 
 let geometry = new THREE.BoxGeometry(1, 1, 1)
 let material = new THREE.MeshToonMaterial({
-  color: 0xd5001c,
+  color: 0x00bf7e,
 })
 let mesh = new THREE.Mesh(geometry, material)
 

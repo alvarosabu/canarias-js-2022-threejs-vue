@@ -6,7 +6,7 @@ import { Pane } from 'tweakpane'
 
 const experience = ref(null)
 const debugObj = {
-  color: '#d5001c',
+  color: '#00bf7e',
   wireframe: false,
   lights: true,
 }

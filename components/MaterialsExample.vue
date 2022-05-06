@@ -23,7 +23,7 @@ scene.add(directionalLight)
 
 let geometry = new THREE.TorusGeometry(3, 1, 16, 100)
 let material = new THREE.MeshBasicMaterial({
-  color: 0xd5001c,
+  color: 0x00bf7e,
   wireframe: debugObj.wireframe,
 })
 let mesh = new THREE.Mesh(geometry, material)
@@ -94,7 +94,7 @@ function initPane() {
       switch (value) {
         case 'basic':
           newMaterial = new THREE.MeshBasicMaterial({
-            color: 0xd5001c,
+            color: 0x00bf7e,
             wireframe: debugObj.wireframe,
           })
           break
@@ -105,25 +105,25 @@ function initPane() {
           break
         case 'lambert':
           newMaterial = new THREE.MeshLambertMaterial({
-            color: 0xd5001c,
+            color: 0x00bf7e,
             wireframe: debugObj.wireframe,
           })
           break
         case 'phong':
           newMaterial = new THREE.MeshPhongMaterial({
-            color: 0xd5001c,
+            color: 0x00bf7e,
             wireframe: debugObj.wireframe,
           })
           break
         case 'toon':
           newMaterial = new THREE.MeshToonMaterial({
-            color: 0xd5001c,
+            color: 0x00bf7e,
             wireframe: debugObj.wireframe,
           })
           break
         default:
           newMaterial = new THREE.MeshBasicMaterial({
-            color: 0xd5001c,
+            color: 0x00bf7e,
             wireframe: debugObj.wireframe,
           })
           break
