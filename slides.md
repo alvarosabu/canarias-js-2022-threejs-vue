@@ -777,6 +777,8 @@ layout: default
 
 ## Recursos
 - [ThreeJS Journey](https://threejs-journey.com/)
+- [Fireship](https://www.youtube.com/watch?v=Q7AOvWpIVHU&t=84s)
+- [AlvaroDevLabs](https://www.youtube.com/c/AlvaroDevLabs)
 ---
 class: 'grid text-center align-self-center justify-self-center'
 ---
